@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surekha (Su) Goluguri — Backend Engineer</title>
+<meta name="description" content="Backend engineer. Distributed systems, event-driven services, and large-scale migrations — most recently at Walmart Global Tech.">
+
+<!-- Open Graph: controls how the link looks when you paste it to a recruiter -->
+<meta property="og:title" content="Surekha (Su) Goluguri — Backend Engineer">
+<meta property="og:description" content="Backend engineer. Distributed systems, event-driven services, and large-scale migrations.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Spectral:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <div class="wrap">
+    <a class="mark" href="#top">Su Goluguri</a>
+    <nav>
+      <a href="#experience">Experience</a>
+      <a href="#work">Selected Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============================= INTRO ============================= -->
+  <div class="intro">
+    <div class="wrap">
+      <h1>Surekha&nbsp;(Su) Goluguri</h1>
+      <p class="role">Backend Engineer</p>
+
+      <p class="lede">
+        I build and migrate backend systems that carry real traffic — event-driven
+        services, API platforms, and the unglamorous work of moving a monolith onto
+        cloud-native infrastructure without the people using it noticing.
+      </p>
+      <p class="lede">
+        Most recently at Walmart Global Tech, where I owned seller-facing features
+        end to end and built one of them from nothing. Java is my primary language;
+        Kafka, Spring Boot, and Kubernetes are where I spend most of my time.
+      </p>
+
+      <div class="links">
+        <a class="primary" href="Surekha_Goluguri_Resume.pdf">Résumé</a>
+        <a href="https://www.linkedin.com/in/surekhagoluguri" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/sugoluguri" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:sugoluguri@gmail.com">Email</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================== EXPERIENCE ========================== -->
+  <section id="experience">
+    <div class="wrap">
+      <h2 class="sec-head">Experience</h2>
+
+      <div class="role-item">
+        <p class="meta">OCT 2021 — NOV 2023 · SUNNYVALE, CA</p>
+        <h3>Senior Software Engineer</h3>
+        <p class="org">Walmart Global Tech</p>
+        <ul>
+          <li>Owned seller-facing features end to end — design, build, rollout, and on-call
+              — across the seller management platform used by external third-party sellers.</li>
+          <li>Migrated Walmart Seller-as-a-Service from a monolith onto WCNP, Walmart's
+              Kubernetes-based cloud-native platform.</li>
+          <li>Built Serial Number Capture from zero: a net-new capability with no existing
+              surface to extend.</li>
+          <li>Built Kafka consumers driving seller-status propagation across downstream services.</li>
+          <li>Mentored junior engineers across both the India and US teams.</li>
+        </ul>
+      </div>
+
+      <div class="role-item">
+        <p class="meta">MAR 2019 — MAR 2020 · SAN FRANCISCO, CA</p>
+        <h3>Software Engineer</h3>
+        <p class="org">Chewse</p>
+        <ul>
+          <!-- TODO(su): 2–3 bullets. What did you own? What shipped? Any scale numbers? -->
+          <li>TODO — what you built and owned here.</li>
+        </ul>
+      </div>
+
+      <div class="role-item">
+        <p class="meta">MAY 2018 — OCT 2018 · INDIANAPOLIS, IN</p>
+        <h3>Software Engineer</h3>
+        <p class="org">Johnson Controls</p>
+        <ul>
+          <!-- TODO(su): 1–2 bullets. -->
+          <li>TODO — what you built and owned here.</li>
+        </ul>
+      </div>
+
+      <div class="role-item">
+        <p class="meta">2016 — 2018 · INDIA</p>
+        <h3>Software Engineer</h3>
+        <!-- TODO(su): add the company name and exact dates -->
+        <p class="org">TODO — company name</p>
+        <ul>
+          <li>Backend services in Python and Django with Celery for asynchronous workloads;
+              some frontend work in React and jQuery.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= SELECTED WORK ========================= -->
+  <section id="work">
+    <div class="wrap">
+      <h2 class="sec-head">Selected Work</h2>
+
+      <details class="case">
+        <summary>
+          <div>
+            <p class="case-title">WSaaS monolith → WCNP microservices</p>
+            <p class="case-sub">Moving Seller-as-a-Service onto cloud-native infrastructure</p>
+          </div>
+          <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="case-body">
+          <h4>Context</h4>
+          <p>Walmart Seller-as-a-Service ran as a monolith. WCNP is Walmart's internal
+             Kubernetes-based cloud-native platform; the mandate was to decompose the
+             monolith into services running there without disrupting sellers.</p>
+          <span class="todo">TODO: how many services? what was the traffic profile? how long did the migration take?</span>
+
+          <h4>What I did</h4>
+          <span class="todo">TODO: which pieces did you personally own — service boundaries, data migration, deploy pipeline, rollback strategy? Write 3–5 sentences. This is the section a hiring manager actually reads.</span>
+
+          <h4>Outcome</h4>
+          <span class="todo">TODO: latency, deploy frequency, incident rate, cost — whatever you can honestly claim.</span>
+
+          <div class="stack">
+            <span>Java</span><span>Spring Boot</span><span>Kubernetes</span><span>WCNP</span>
+          </div>
+        </div>
+      </details>
+
+      <details class="case">
+        <summary>
+          <div>
+            <p class="case-title">Serial Number Capture</p>
+            <p class="case-sub">Built from zero — a net-new seller-facing capability</p>
+          </div>
+          <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="case-body">
+          <h4>Context</h4>
+          <p>No existing surface to extend. Serial number tracking had to be designed and
+             built end to end, then exposed to external third-party sellers.</p>
+          <span class="todo">TODO: what problem did this solve for sellers / for Walmart? Why did it need to exist?</span>
+
+          <h4>Design</h4>
+          <span class="todo">TODO: the design decisions you made and the alternatives you rejected. This is the strongest story you have — it is net-new, you owned it, and it shipped to external users. Give it the most detail.</span>
+
+          <h4>Outcome</h4>
+          <span class="todo">TODO: adoption, volume, what it unlocked.</span>
+
+          <div class="stack">
+            <span>Java</span><span>Spring Boot</span><span>REST</span>
+          </div>
+        </div>
+      </details>
+
+      <details class="case">
+        <summary>
+          <div>
+            <p class="case-title">Kafka seller-status consumers</p>
+            <p class="case-sub">Event-driven propagation of seller state across services</p>
+          </div>
+          <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="case-body">
+          <h4>Context</h4>
+          <p>Seller status changes needed to reach downstream systems reliably and in order.</p>
+          <span class="todo">TODO: what were the consistency requirements? what broke before this existed?</span>
+
+          <h4>What I did</h4>
+          <span class="todo">TODO: consumer design, idempotency, ordering guarantees, retry and DLQ handling, throughput.</span>
+
+          <div class="stack">
+            <span>Java</span><span>Kafka</span><span>Spring Boot</span>
+          </div>
+        </div>
+      </details>
+
+      <details class="case">
+        <summary>
+          <div>
+            <p class="case-title">CCM 2.0 traffic diversion</p>
+            <p class="case-sub">Shifting live traffic between platform generations</p>
+          </div>
+          <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="case-body">
+          <h4>Context</h4>
+          <span class="todo">TODO: what is CCM, and what was being diverted from where to where? Write this for someone outside Walmart — assume zero internal context.</span>
+
+          <h4>What I did</h4>
+          <span class="todo">TODO: rollout strategy, percentage ramp, monitoring, rollback plan, what went wrong and how you caught it.</span>
+
+          <div class="stack">
+            <span>Java</span><span>Kubernetes</span>
+          </div>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!--
+  ===================================================================
+  AI / AGENT WORK — currently commented out.
+
+  You chose to keep Rainier Labs AI / ReplyPerch off the public site so
+  it stays consistent with the résumés where you've excluded it. If you
+  later want a version for AI/agent applications, uncomment this block
+  and fill it in. Keep in mind: once it's public and indexed, it is
+  public for every recruiter, not only the ones you send it to.
+  ===================================================================
+
+  <section id="ai">
+    <div class="wrap">
+      <h2 class="sec-head">AI &amp; Agent Work</h2>
+      <div class="role-item">
+        <p class="meta">MAY 2026 — PRESENT</p>
+        <h3>Co-Founder &amp; Software Engineer</h3>
+        <p class="org">Rainier Labs AI LLC</p>
+        <ul>
+          <li>TODO</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- ============================ SKILLS ============================ -->
+  <section id="skills" class="skills">
+    <div class="wrap">
+      <h2 class="sec-head">Skills</h2>
+      <dl>
+        <dt>Primary</dt>
+        <dd>Java — roughly two years of production ownership at Walmart Global Tech</dd>
+
+        <dt>Also</dt>
+        <dd>Python, SQL, JavaScript</dd>
+
+        <dt>Backend</dt>
+        <dd>Spring Boot, REST APIs, Kafka, Django, Celery</dd>
+
+        <dt>Infrastructure</dt>
+        <dd>Kubernetes, WCNP, CI/CD
+          <!-- TODO(su): add the cloud you've actually used — AWS? Azure? GCP? Don't list one you haven't. -->
+        </dd>
+
+        <dt>Frontend</dt>
+        <dd>React, HTML/CSS, jQuery — working familiarity, not my focus</dd>
+
+        <dt>Practice</dt>
+        <dd>System design, on-call ownership, mentoring junior engineers</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ========================== EDUCATION ========================== -->
+  <section id="education">
+    <div class="wrap">
+      <h2 class="sec-head">Education</h2>
+
+      <div class="edu-item">
+        <div class="when">AUG 2024 — MAY 2026</div>
+        <div>
+          <strong>M.S., Computer Science &amp; Engineering</strong>
+          <span>University of Texas at Arlington</span>
+          <span>Graduate Research Assistant, Jan 2025 — May 2026</span>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="when">
+          <!-- TODO(su): add graduation year -->
+          TODO
+        </div>
+        <div>
+          <strong>B.S., Computer Science &amp; Engineering</strong>
+          <span>JNTU Kakinada</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Seattle area · open to roles in the Seattle metro, the Bay Area, and elsewhere.</p>
+    <p>
+      <a href="mailto:sugoluguri@gmail.com">sugoluguri@gmail.com</a> ·
+      <a href="https://www.linkedin.com/in/surekhagoluguri" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a href="https://github.com/sugoluguri" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

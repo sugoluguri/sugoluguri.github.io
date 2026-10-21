@@ -233,6 +233,7 @@ section { padding: 5rem 0; }
   align-items: start;
 }
 .about-grid .sec-head { margin-bottom: 0; }
+.about-grid .sec-head .label { padding-top: .375rem; }
 .about-copy p { color: var(--ink-soft); margin: 0 0 1.125rem; }
 .about-copy p:last-child { margin-bottom: 0; }
 
@@ -286,18 +287,19 @@ section { padding: 5rem 0; }
 
 /* ------------------------------ skills ------------------------------ */
 
-.skill-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.5rem; }
+.skill-rows { border-top: 1px solid var(--rule); }
 
-.skill-col h3 {
-  font-family: var(--display);
-  font-weight: 400;
-  font-size: 1.0625rem;
-  letter-spacing: -0.01em;
-  margin: 0 0 .25rem;
-  padding-bottom: .75rem;
+.skill-row {
+  display: grid;
+  grid-template-columns: 14rem 1fr;
+  gap: 2rem;
+  padding: 1.5rem 0;
   border-bottom: 1px solid var(--rule);
+  align-items: start;
 }
-.skill-col .pills { margin-top: 1rem; }
+
+.skill-row > .label { padding-top: .375rem; }
+.skill-row .pills { margin-top: 0; }
 
 /* ---------------------------- education ---------------------------- */
 
@@ -311,6 +313,28 @@ section { padding: 5rem 0; }
   margin: .5rem 0 .5rem;
 }
 .edu-item p { color: var(--ink-soft); margin: 0; font-size: .875rem; }
+
+/* -------------------------- certifications -------------------------- */
+
+.certs {
+  margin-top: 3rem;
+  padding-top: 2.25rem;
+  border-top: 1px solid var(--rule);
+}
+
+.cert-item { margin-top: 1rem; max-width: 36rem; }
+
+.cert-item h3 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 1.1875rem;
+  letter-spacing: -0.015em;
+  margin: 0 0 .5rem;
+}
+
+.cert-item p { color: var(--ink-soft); margin: 0 0 .25rem; font-size: .875rem; }
+.cert-item a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.cert-item a:hover { color: var(--ink-faint); }
 
 /* ----------------------------- footer ----------------------------- */
 
@@ -331,7 +355,7 @@ section { padding: 5rem 0; }
 
 @media (max-width: 1000px) {
   :root { --gut: 2rem; }
-  .skill-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+  .skill-row { grid-template-columns: 11rem 1fr; gap: 1.5rem; }
   .proj-grid { grid-template-columns: 1fr 1fr; }
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
 }
@@ -350,7 +374,9 @@ section { padding: 5rem 0; }
 @media (max-width: 600px) {
   :root { --gut: 1.5rem; }
   section { padding: 3.25rem 0; }
-  .skill-grid, .edu-grid { grid-template-columns: 1fr; gap: 1.75rem; }
+  .edu-grid { grid-template-columns: 1fr; gap: 1.75rem; }
+  .skill-row { grid-template-columns: 1fr; gap: .625rem; }
+  .skill-row > .label { padding-top: 0; }
   .proj-grid { grid-template-columns: 1fr; }
   .proj { padding: 1.75rem 1.5rem; }
   .site-foot .right { margin-left: 0; }

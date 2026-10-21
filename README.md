@@ -28,25 +28,40 @@ Then: repo → **Settings** → **Pages** → Source: *Deploy from a branch* →
 
 First deploy takes a couple of minutes. After that, every push to `main` republishes.
 
-## Before you publish
+## Filling it in
 
-Search the files for `TODO` — each one marks something only you can fill in.
+Search `index.html` for `FILL` — each comment marks a slot waiting on you.
 
-- [x] GitHub username confirmed: `sugoluguri`
-- [ ] Add `Surekha_Goluguri_Resume.pdf` to the repo root, or change the Résumé link
-- [ ] Fill the Chewse, Johnson Controls, and India role bullets
-- [ ] Fill the four case studies under Selected Work — this is the whole point of the site
-- [ ] Add your B.S. graduation year
-- [ ] Add the cloud platform you've actually used to the Skills section
-- [ ] Decide whether to uncomment the AI / agent section (see the comment block in `index.html`)
+- [ ] Add `Surekha_Goluguri_Resume.pdf` to the repo root, or the Résumé button 404s
+- [ ] Photo: `assets/img/portrait.jpg`, then uncomment the `<img>` in the hero and delete the `<span class="ph">`
+- [ ] Rewrite the three About paragraphs in your own voice
+- [ ] B.S. graduation year on the JNTU card
+- [ ] Bullets for Chewse and Johnson Controls
+- [ ] Optional: your earlier India role as a fourth `.role-row`
+- [ ] Cloud platform in the Infrastructure skill column
+- [ ] One scope line on each project
+
+## Section order
+
+Currently Education -> Skills -> Work Experience -> Projects, matching the nav.
+To lead with Work Experience instead, move the `<section id="experience">` block
+above `<section id="education">` and reorder the nav links to match. Swap the
+`field-mist` / `field-paper` classes on the two so the bands still alternate.
 
 ## Editing
 
-Colors, fonts, and the reading-column width are all tokens at the top of `style.css`
-under `:root`. Dark mode overrides sit directly below. Change a value once and it
-propagates everywhere.
+Colours and fonts are tokens at the top of `style.css` under `:root`:
 
-To add a case study, copy any `<details class="case">` block in `index.html` and edit it.
+| Token | Used for |
+|---|---|
+| `--sage` `#e4ecd8` | hero, Projects band |
+| `--mist` `#eef3f4` | Education, Work Experience, footer |
+| `--paper` `#ffffff` | About, Skills |
+| `--deep` `#4e5a55` | buttons only |
+
+Change one and every section using it follows.
+
+To add a project, copy any `<article class="proj">` block in `index.html`.
 
 ## Local preview
 

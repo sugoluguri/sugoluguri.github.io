@@ -228,12 +228,13 @@ section { padding: 5rem 0; }
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1.25fr;
-  gap: 4rem;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
   align-items: start;
 }
 .about-grid .sec-head { margin-bottom: 0; }
 .about-grid .sec-head .label { padding-top: .375rem; }
+.about-copy { max-width: 46rem; }
 .about-copy p { color: var(--ink-soft); margin: 0 0 1.125rem; }
 .about-copy p:last-child { margin-bottom: 0; }
 
